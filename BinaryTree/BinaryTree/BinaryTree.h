@@ -1,15 +1,16 @@
 #ifndef _BINARYTREE_H
 #define _BINARYTREE_H
 #define Maxsize 100
-#include<stack>
-#include<queue>
-#include<list>
+#include <stack>
+#include <queue>
+#include <list>
 
 template<typename DataType>
 class BTNode
 {
 public:
 	BTNode() : LChild(NULL), RChild(NULL) {};
+	BTNode(DataType data_temp) : LChild(NULL), RChild(NULL),data(data_temp) {};
 	DataType data;
 	BTNode<DataType> *LChild, *RChild;
 };
